@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS + CSS Clock</title>
+</head>
+<body>
+         <h3 style="color: aqua" id="announce"></h3>
+   <div class="narrator">
+        <select name="voice" id="voices">
+            <option value="">Select A Voice Narrator</option>
+        </select>
+        <button id="speak">Speak</button>
+    </div>
+    <!-- This is the main container -->
+    <div class="clock">
+        <!-- This is for holding content of the clock -->
+        <div class="clock-face">
+            <!-- The clock background -->
+            <img src="https://thumbs.dreamstime.com/b/antique-clock-face-5828362.jpg" alt="Clock"/> 
+            <!-- The digital clock -->
+            <div class="digital">
+                <div class="wrap">
+                    <div id="clock"> 
+                        <div id="time"></div>
+                        <div id="collon"></div>
+                        <div id="secs"></div>
+                        <div id="ampm"></div>
+                    </div>
+                </div>
+            </div>           
+            <div id="date"></div>
+          
+            <!-- The red hand for seconds -->
+            <div class="hand hour-hand"></div>
+            <!-- The black hand for minutes -->
+            <div class="hand min-hand"></div>
+            <!-- The black hand for hours -->
+            <div class="hand second-hand"></div>
+            <!-- The circle in the middle of the clock -->
+            <div class="center"></div>
+        </div>
+    </div>
+    <lable>الساعة متوافقة مع التوقيت المحلي</lable>
+
+  <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+</body>
+</html>
